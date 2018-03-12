@@ -1,0 +1,32 @@
+{
+  "name": "flow-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --watch --mode development --config webpack.config.js",
+    "fixer": "onchange 'src/*.js' -- prettier --write {{changed}}",
+    "flow": "onchange 'src/*.js' -- flow check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuyutyanu/flow-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuyutyanu/flow-sample/issues"
+  },
+  "homepage": "https://github.com/yuyutyanu/flow-sample#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.67.1",
+    "onchange": "^3.3.0",
+    "prettier": "1.11.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  },
+  "dependencies": {}
+}
