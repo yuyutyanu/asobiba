@@ -1,9 +1,9 @@
 const path = require('path');
 
 const config = {
-  entry: './src/index.js',
+  entry: './assets/index.js',
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   module: {
@@ -12,7 +12,7 @@ const config = {
     ]
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
+    contentBase: path.resolve(__dirname, 'dist'),
     port: 3000,
     watchContentBase: true
   },
