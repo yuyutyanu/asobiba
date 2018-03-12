@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --watch --mode development --config webpack.config.js",
+    "serve": "webpack-dev-server --hot --inline --mode development --config webpack.config.js",
     "fixer": "onchange 'src/*.js' -- prettier --write {{changed}}",
-    "flow": "onchange 'src/*.js' -- flow check"
+    "flow": "onchange 'src/*.js' -- flow check "
   },
   "repository": {
     "type": "git",

@@ -13,7 +13,8 @@ const config = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
-    port: 3000
+    port: 3000,
+    watchContentBase: true
   },
 };
 
